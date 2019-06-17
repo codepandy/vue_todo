@@ -17,11 +17,12 @@ const config = {
             { test: /\.vue$/, use: 'vue-loader' },
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
             {
-                test: /\.less$/, use: ['style-loader', {
-                    loader: 'css-laoder', options: {
-                        modules: true,
+                test: /\.less$/, use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
                     },
-                }, "less-loader"]
+                    "less-loader"]
             },
             { test: /\.jsx/, use: ["babel-loader"] },
             { test: /\.(gif|jpg|jpeg|png|svg)$/, use: [{ loader: 'url-loader', options: { limit: 1024, name: '[name]-wenmu.[ext]' } }] }
