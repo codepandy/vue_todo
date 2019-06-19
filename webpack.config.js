@@ -5,8 +5,9 @@ const webpack = require("webpack");
 const ExtractPlugin = require("extract-text-webpack-plugin");
 
 const isDev = process.env.NODE_ENV === "development";
-
+console.log(process.env.NODE_ENV);
 const config = {
+  target: "web", // 编译目标是web平台
   mode: "development",
   entry: path.join(__dirname, "src/index.js"),
   output: {
