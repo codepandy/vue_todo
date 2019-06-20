@@ -174,6 +174,9 @@ if (isDev) {
 }
 ```
 
+补充：
+>webpack4后不在用这个，而是使用`mini-css-extract-plugin`,详情可见vue官网`vue-loader`的介绍。
+
 ### Error:Tapable.plugin is deprecated
 
 > Tapable.plugin is deprecated. Use new API on `.hooks` instead
